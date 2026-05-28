@@ -14,10 +14,7 @@ export function useCleanNavigation() {
           const element = document.getElementById(sectionId);
           
           if (element) {
-            // Cambiar la URL a la base sin el hash
             window.history.pushState({}, '', '/');
-            
-            // Hacer scroll a la sección
             element.scrollIntoView({ behavior: 'smooth' });
           }
         }

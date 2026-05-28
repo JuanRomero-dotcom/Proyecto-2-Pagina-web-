@@ -2,34 +2,28 @@ import { useI18n } from "../context/I18nContext";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const ICONS = [
-  // 01 Pentest - target
   <svg key="0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="12" r="9" />
     <circle cx="12" cy="12" r="5" />
     <circle cx="12" cy="12" r="1.5" fill="currentColor" />
   </svg>,
-  // 02 Red Team - shield+check
   <svg key="1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z" />
     <path d="m9 12 2 2 4-4" />
   </svg>,
-  // 03 OSINT - search globe
   <svg key="2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="11" cy="11" r="7" />
     <path d="M11 4a10 10 0 0 1 0 14M11 4a10 10 0 0 0 0 14M4 11h14" />
     <path d="m20 20-3.5-3.5" />
   </svg>,
-  // 04 Security Architecture - building/layers
   <svg key="3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 21h18" />
     <path d="M5 21V7l8-4 8 4v14" />
     <path d="M8 21v-8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8" />
   </svg>,
-  // 05 SAST/DAST - code brackets
   <svg key="4" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
   </svg>,
-  // 06 Social Eng - hook+person
   <svg key="5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="8" r="3.5" />
     <path d="M5.5 21c.8-4 3.5-6 6.5-6s5.7 2 6.5 6" />

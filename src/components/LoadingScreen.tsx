@@ -6,12 +6,10 @@ export default function LoadingScreen() {
   const [showText, setShowText] = useState(false);
 
   useEffect(() => {
-    // Mostrar el texto al segundo 3.0 (cuando la animación está casi lista)
     const textTimer = setTimeout(() => {
       setShowText(true);
     }, 3000);
 
-    // A los 4.2 segundos, fade-out y ocultar (dando tiempo al texto)
     const fadeTimer = setTimeout(() => {
       setFaded(true);
       setTimeout(() => {
