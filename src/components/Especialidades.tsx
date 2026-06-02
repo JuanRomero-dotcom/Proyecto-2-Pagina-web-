@@ -63,7 +63,7 @@ export default function Especialidades() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
           {t.especialidades.cards.map((c: any, i: number) => (
             <article
-              key={c.tag}
+              key={i}
               className="group fade-up relative bg-white dark:bg-[#11151f] border border-ink-200 dark:border-white/10 p-7 md:p-8 shadow-sm hover:shadow-xl hover:-translate-y-1.5 hover:border-brand/40 transition-all duration-500 ease-out"
               style={{ transitionDelay: `${i * 80}ms` }}
             >

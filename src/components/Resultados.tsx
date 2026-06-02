@@ -56,7 +56,7 @@ export default function Resultados() {
 
         <div ref={triggerRef} className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
           {t.resultados.stats.map((s: any, i: number) => (
-            <Stat key={s.label} value={s.value} suffix={s.suffix} label={s.label} start={start} delay={i * 120} />
+            <Stat key={i} value={s.value} suffix={s.suffix} label={s.label} start={start} delay={i * 120} />
           ))}
         </div>
       </div>

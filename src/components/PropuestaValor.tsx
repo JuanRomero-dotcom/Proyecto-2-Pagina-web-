@@ -27,7 +27,7 @@ export default function PropuestaValor() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {t.propuesta.values.map((v: any, i: number) => (
             <article
-              key={v.title}
+              key={i}
               className="fade-up bg-paper dark:bg-[#11151f] border border-ink-200 dark:border-white/10 p-8 hover:border-brand/60 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 ease-out group"
               style={{ transitionDelay: `${i * 100}ms` }}
             >

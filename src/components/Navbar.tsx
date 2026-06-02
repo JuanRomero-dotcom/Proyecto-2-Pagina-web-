@@ -19,11 +19,8 @@ export default function Navbar() {
   const links = [
     { href: "#especialidades", label: t.nav.especialidades },
     { href: "#trayectoria", label: t.nav.trayectoria },
-    { href: "#resultados", label: t.nav.resultados },
     { href: "#proyecto", label: t.nav.proyecto },
     { href: "#albeh-global", label: t.nav.albeh },
-    { href: "#propuesta-valor", label: t.nav.propuesta },
-    { href: "#contacto", label: t.nav.contacto },
   ];
 
   return (
@@ -39,24 +36,25 @@ export default function Navbar() {
           <Brand />
         </a>
 
-        <ul className="hidden lg:flex items-center gap-3">
+        <ul className="hidden lg:flex items-center gap-10">
           {links.map((l: any) => (
-            <li key={l.href}>
+            <li key={l.href} className="group relative py-1.5">
               <a
                 href={l.href}
-                className="tracking-[0.15em] text-[9px] font-medium text-ink-700 dark:text-ink-300 hover:text-brand transition-colors whitespace-nowrap"
+                className="tracking-[0.15em] text-[9.5px] font-medium text-ink-700 dark:text-ink-300 hover:text-brand transition-colors whitespace-nowrap block"
               >
                 {l.label}
               </a>
+              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-brand group-hover:w-full transition-all duration-300 ease-out" />
             </li>
           ))}
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <div className="hidden sm:flex items-center text-[9px] tracking-[0.2em] font-medium">
             <button
               onClick={() => setLang("es")}
-              className={`px-1 py-1 transition-colors ${
+              className={`px-1 py-1 transition-all duration-300 hover:scale-110 ${
                 lang === "es" ? "text-brand" : "text-ink-400 hover:text-ink-700 dark:hover:text-ink-200"
               }`}
             >
@@ -65,7 +63,7 @@ export default function Navbar() {
             <span className="text-ink-300 dark:text-ink-600">/</span>
             <button
               onClick={() => setLang("en")}
-              className={`px-1 py-1 transition-colors ${
+              className={`px-1 py-1 transition-all duration-300 hover:scale-110 ${
                 lang === "en" ? "text-brand" : "text-ink-400 hover:text-ink-700 dark:hover:text-ink-200"
               }`}
             >
@@ -73,24 +71,24 @@ export default function Navbar() {
             </button>
           </div>
 
-          <button
-            onClick={toggle}
-            aria-label="Toggle theme"
-            className="h-8 w-8 grid place-items-center rounded border border-ink-200 dark:border-white/15 text-ink-600 dark:text-ink-300 hover:border-brand/60 hover:text-brand transition-colors flex"
-          >
-            {theme === "dark" ? (
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-            ) : (
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            )}
-          </button>
-
           <a
             href="#contacto"
-            className="hidden sm:inline-flex items-center tracking-[0.2em] text-[11px] font-medium px-5 py-3 rounded border border-brand text-brand hover:bg-brand hover:text-white transition-colors"
+            className="hidden sm:inline-flex items-center tracking-[0.2em] text-[11px] font-medium px-5 py-3 rounded border border-brand text-brand hover:bg-brand hover:text-white dark:hover:text-[#0a0d14] hover:shadow-lg hover:shadow-brand/10 dark:hover:shadow-brand/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out"
           >
             {t.nav.cta}
           </a>
+
+          <button
+            onClick={toggle}
+            aria-label="Toggle theme"
+            className="h-8 w-8 grid place-items-center rounded border border-ink-200 dark:border-white/15 text-ink-600 dark:text-ink-300 hover:border-brand/60 hover:text-brand hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 flex group/theme"
+          >
+            {theme === "dark" ? (
+              <svg className="transition-transform duration-500 group-hover/theme:rotate-[360deg] group-hover/theme:scale-110" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            ) : (
+              <svg className="transition-transform duration-500 group-hover/theme:rotate-[360deg] group-hover/theme:scale-110" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            )}
+          </button>
 
           <button
             className="lg:hidden h-8 w-8 grid place-items-center rounded border border-ink-200 dark:border-white/15"

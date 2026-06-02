@@ -9,7 +9,9 @@ import AlbehGlobal from "./components/AlbehGlobal";
 import PropuestaValor from "./components/PropuestaValor";
 import Agenda from "./components/Agenda";
 import Contacto from "./components/Contacto";
+import Consultores from "./components/Consultores";
 import Footer from "./components/Footer";
+import ChatWidget from "./components/ChatWidget";
 import { useCleanNavigation } from "./hooks/useCleanNavigation";
 
 export default function App() {
@@ -29,8 +31,10 @@ export default function App() {
         <PropuestaValor />
         <Agenda />
         <Contacto />
+        <Consultores />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }

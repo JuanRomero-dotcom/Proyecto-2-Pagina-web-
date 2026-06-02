@@ -49,28 +49,17 @@ export default function AlbehGlobal() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Visitar Albeh Global"
-              className="group relative block aspect-video bg-gradient-to-br from-ink to-ink-700 overflow-hidden border border-ink-200 dark:border-white/10 hover:border-brand transition-all duration-500"
+              className="group relative block aspect-video bg-white overflow-hidden border border-ink-200 dark:border-white/10 hover:border-brand transition-all duration-500"
             >
-              <div className="absolute inset-0 grid place-items-center">
-                <div className="text-center text-white/90 transition-transform duration-700 group-hover:scale-105">
-                  <div className="font-serif italic text-4xl md:text-5xl">Albeh Global</div>
-                  <div className="mt-2 tracking-[0.3em] text-[10px] text-brand-soft">STRATEGIC ALLIANCE</div>
-                </div>
+              <div className="absolute inset-0 bg-white">
+                <img
+                  src="/albeh-logo.png"
+                  alt="Albeh Global Logo"
+                  className="h-full w-full object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
-              <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(rgba(197,213,255,0.5) 1px, transparent 1.4px)",
-                  backgroundSize: "14px 14px",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse 70% 60% at 50% 50%, #000 35%, transparent 80%)",
-                  maskImage:
-                    "radial-gradient(ellipse 70% 60% at 50% 50%, #000 35%, transparent 80%)",
-                }}
-              />
-              <div className="absolute bottom-4 right-4 h-10 w-10 rounded-full border border-white/40 grid place-items-center group-hover:border-brand group-hover:bg-brand transition-all duration-500">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+              <div className="absolute bottom-4 right-4 h-10 w-10 rounded-full border border-ink-300 dark:border-white/20 bg-ink-900/5 grid place-items-center group-hover:border-brand group-hover:bg-brand transition-all duration-500">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-700 group-hover:text-white transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                   <path d="M7 17L17 7M9 7h8v8"/>
                 </svg>
               </div>

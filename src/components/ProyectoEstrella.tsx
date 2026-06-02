@@ -2,7 +2,7 @@ import { useI18n } from "../context/I18nContext";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function ProyectoEstrella() {
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
   const ref = useScrollReveal<HTMLElement>();
 
   return (
@@ -42,16 +42,37 @@ export default function ProyectoEstrella() {
               ))}
             </ul>
 
-            <p className="mt-8 text-sm text-ink-700 dark:text-ink-200">
-              {t.proyecto.cta2Q}
-            </p>
-            <a
-              href="#contacto"
-              className="mt-2 inline-flex items-center gap-2 tracking-[0.25em] text-[11px] font-medium text-brand hover:text-brand-dark transition-colors"
-            >
-              {t.proyecto.cta2}
-              <span>→</span>
-            </a>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contacto"
+                className="inline-flex items-center justify-center tracking-[0.2em] text-[11px] font-medium px-6 py-3.5 bg-brand text-white hover:bg-brand-dark hover:shadow-lg hover:shadow-brand/10 dark:hover:shadow-brand/20 hover:-translate-y-0.5 transition-all duration-300 rounded"
+              >
+                {t.proyecto.cta2}
+                <span className="ml-2 font-serif text-xs">→</span>
+              </a>
+              <a
+                href="/presentacion.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center justify-center tracking-[0.2em] text-[11px] font-medium px-6 py-3.5 border border-brand text-brand hover:bg-brand hover:text-white dark:hover:text-[#0c1018] hover:shadow-lg hover:shadow-brand/10 dark:hover:shadow-brand/20 hover:-translate-y-0.5 transition-all duration-300 rounded group/btn"
+              >
+                {lang === "es" ? "SABER MÁS DE NOSOTROS" : "LEARN MORE ABOUT US"}
+                <svg 
+                  width="13" 
+                  height="13" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="ml-2 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div className="fade-up" style={{ transitionDelay: "120ms" }}>
@@ -60,28 +81,17 @@ export default function ProyectoEstrella() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Visitar Väktørn Cyber Defence"
-              className="group relative block aspect-video bg-gradient-to-br from-ink to-ink-700 overflow-hidden border border-ink-200 dark:border-white/10 hover:border-brand transition-all duration-500"
+              className="group relative block aspect-video bg-white overflow-hidden border border-ink-200 dark:border-white/10 hover:border-brand transition-all duration-500"
             >
-              <div className="absolute inset-0 grid place-items-center">
-                <div className="text-center text-white/90 transition-transform duration-700 group-hover:scale-105">
-                  <div className="font-serif italic text-4xl md:text-5xl">Väktørn</div>
-                  <div className="mt-2 tracking-[0.3em] text-[10px] text-brand-soft">CYBER DEFENCE</div>
-                </div>
+              <div className="absolute inset-0 bg-white">
+                <img
+                  src="/vaktorn-logo.png"
+                  alt="Väktørn Cyber Defence Logo"
+                  className="h-full w-full object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
-              <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(rgba(197,213,255,0.5) 1px, transparent 1.4px)",
-                  backgroundSize: "14px 14px",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse 70% 60% at 50% 50%, #000 35%, transparent 80%)",
-                  maskImage:
-                    "radial-gradient(ellipse 70% 60% at 50% 50%, #000 35%, transparent 80%)",
-                }}
-              />
-              <div className="absolute bottom-4 right-4 h-10 w-10 rounded-full border border-white/40 grid place-items-center group-hover:border-brand group-hover:bg-brand transition-all duration-500">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+              <div className="absolute bottom-4 right-4 h-10 w-10 rounded-full border border-ink-300 dark:border-white/20 bg-ink-900/5 grid place-items-center group-hover:border-brand group-hover:bg-brand transition-all duration-500">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-700 group-hover:text-white transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                   <path d="M7 17L17 7M9 7h8v8"/>
                 </svg>
               </div>

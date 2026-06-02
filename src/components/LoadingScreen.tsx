@@ -28,7 +28,7 @@ export default function LoadingScreen() {
   return (
     <div
       id="splash-screen"
-      className={`fixed inset-0 z-[100] bg-white flex items-center justify-center transition-opacity duration-800 ${
+      className={`fixed inset-0 z-[100] bg-white dark:bg-[#0a0d14] flex items-center justify-center transition-opacity duration-800 ${
         faded ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -63,9 +63,14 @@ export default function LoadingScreen() {
             Yamil Amílcar
           </h1>
           <div className="h-px w-32 bg-[#B38B3F]" />
-          <p className="text-base md:text-lg tracking-[0.3em] text-[#B38B3F] font-medium">
-            CYBERSECURITY
-          </p>
+          <div className="flex flex-col items-center gap-1.5">
+            <p className="text-base md:text-lg tracking-[0.3em] text-[#B38B3F] font-medium text-center leading-none">
+              CYBERSECURITY
+            </p>
+            <p className="text-xs md:text-sm tracking-[0.25em] text-[#B38B3F] font-medium text-center mt-1">
+              ALBEH GLOBAL ENTERPRISES
+            </p>
+          </div>
         </div>
       </div>
 

@@ -14,11 +14,12 @@ export const translations = {
     hero: {
       label: "ESPECIALISTA EN CIBERSEGURIDAD OFENSIVA",
       title1: "Experto en Pentesting y",
-      title2: "Defensa Ofensiva",
+      title2: "Seguridad Ofensiva",
       desc: "Más de 10 años protegiendo activos digitales de banca, gobierno y energía. Director de Ciberseguridad en Väktørn Cyber Defence, con operaciones en Dubái y Ciudad de México.",
       cta1: "VER MI PROYECTO",
       cta2: "MI TRAYECTORIA",
-      badgeLabel: "MÁS DE 10 AÑOS · EXPERTO EN OFFSEC",
+      badgeLabel1: "MÁS DE 10 AÑOS",
+      badgeLabel2: " · EXPERTO EN OFFSEC",
       badgeText: "Experto en Ciberseguridad",
     },
 
@@ -106,7 +107,7 @@ export const translations = {
       label: "PROYECTO ESTRELLA",
       title: "Väktørn Cyber Defence",
       subtitle: "Defensa Digital para Instituciones Críticas",
-      p1: "Desde 2024, lidero la práctica de ciberseguridad ofensiva de Väktørn Cyber Defence. Atendemos a bancos, ministerios y operadores de infraestructura crítica con una promesa simple: anticipamos la amenaza y protegemos su valor.",
+      p1: "Desde 2024, lidero la práctica de ciberseguridad ofensiva de Väktørn Cyber Defence. Atendemos a bancos, sector privado y operadores de infraestructura crítica con una promesa simple: anticipamos la amenaza y protegemos su valor.",
       bullets: [
         "Operadores certificados OSCP, CISSP, CEH y OSSTMM.",
         "Operación en Dubái, Ciudad de México, Europa y LATAM.",
@@ -168,9 +169,11 @@ export const translations = {
       slotsTitle: "HORARIOS DISPONIBLES",
       pickDay: "Seleccione un día",
       confirm: "CONFIRMAR RESERVA",
-      booked: "Reserva confirmada",
+      booked: "Selección registrada",
       tz: "ZONA HORARIA · GMT-6 · LUN–VIE",
       reset: "AGENDAR OTRA",
+      googleBtn: "COMPLETAR EN GOOGLE CALENDAR",
+      googleDesc: "Para finalizar tu cita de diagnóstico y recibir el correo de confirmación con el enlace de Google Meet, por favor haz clic en el botón inferior para completar los datos en nuestra plataforma oficial de Google Calendar.",
     },
 
     contacto: {
@@ -181,6 +184,13 @@ export const translations = {
       cta2: "COLABOREMOS",
       response: "Responda en menos de 48 horas.",
       watermark: "Y. AMÍLCAR · CYBER",
+    },
+
+    consultores: {
+      title: "¿Quieres formar parte de los consultores de Albeh Global?",
+      btn: "Conoce más sobre Albeh",
+      emailText: "Envía tu CV a:",
+      email: "info@albehge.com",
     },
 
     footer: {
@@ -214,11 +224,12 @@ export const translations = {
     hero: {
       label: "OFFENSIVE CYBERSECURITY SPECIALIST",
       title1: "Expert in Pentesting and",
-      title2: "Offensive Defence",
+      title2: "Offensive Security",
       desc: "Over 10 years protecting digital assets in banking, government and energy. Cybersecurity Director at Väktørn Cyber Defence, with operations in Dubai and Mexico City.",
       cta1: "SEE MY PROJECT",
       cta2: "MY JOURNEY",
-      badgeLabel: "OVER 10 YEARS · EXPERT IN OFFSEC",
+      badgeLabel1: "OVER 10 YEARS",
+      badgeLabel2: " · EXPERT IN OFFSEC",
       badgeText: "Cybersecurity Expert",
     },
 
@@ -306,7 +317,7 @@ export const translations = {
       label: "FLAGSHIP PROJECT",
       title: "Väktørn Cyber Defence",
       subtitle: "Digital Defence for Mission-Critical Institutions",
-      p1: "Since 2024, I lead the offensive cybersecurity practice at Väktørn Cyber Defence. We serve banks, ministries and critical infrastructure operators with a simple promise: we anticipate the threat and protect your value.",
+      p1: "Since 2024, I lead the offensive cybersecurity practice at Väktørn Cyber Defence. We serve banks, private sector and critical infrastructure operators with a simple promise: we anticipate the threat and protect your value.",
       bullets: [
         "Operators certified in OSCP, CISSP, CEH and OSSTMM.",
         "Operations across Dubai, Mexico City, Europe and LATAM.",
@@ -368,9 +379,11 @@ export const translations = {
       slotsTitle: "AVAILABLE SLOTS",
       pickDay: "Select a day",
       confirm: "CONFIRM BOOKING",
-      booked: "Booking confirmed",
+      booked: "Selection saved",
       tz: "TIMEZONE · GMT-6 · MON–FRI",
       reset: "BOOK ANOTHER",
+      googleBtn: "COMPLETE ON GOOGLE CALENDAR",
+      googleDesc: "To finalize your briefing session and receive the confirmation email with the Google Meet link, please click the button below to complete the booking on our official Google Calendar platform.",
     },
 
     contacto: {
@@ -381,6 +394,13 @@ export const translations = {
       cta2: "WORK WITH ME",
       response: "I respond within 48 hours.",
       watermark: "Y. AMÍLCAR · CYBER",
+    },
+
+    consultores: {
+      title: "Want to join Albeh Global as a consultant?",
+      btn: "Learn more about Albeh",
+      emailText: "Send your CV to:",
+      email: "info@albehge.com",
     },
 
     footer: {

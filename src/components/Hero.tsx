@@ -72,8 +72,8 @@ export default function Hero() {
 
             <div className="absolute -bottom-6 right-3 md:-right-6 bg-white dark:bg-[#11151f] border border-ink-200 dark:border-white/10 shadow-xl px-6 py-4 max-w-[220px]">
               <p className="text-[10px] tracking-[0.3em] font-medium uppercase">
-                <span className="text-brand dark:text-brand">MÁS DE 10 AÑOS</span>
-                <span className="text-ink-900 dark:text-white"> · EXPERTO EN OFFSEC</span>
+                <span className="text-brand dark:text-brand">{t.hero.badgeLabel1}</span>
+                <span className="text-ink-900 dark:text-white">{t.hero.badgeLabel2}</span>
               </p>
             </div>
           </div>
