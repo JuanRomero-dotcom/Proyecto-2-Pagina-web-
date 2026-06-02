@@ -14,7 +14,15 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const [inputValue, setInputValue] = useState("");
+  const [isAppReady, setIsAppReady] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAppReady(true);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const tChat = {
     es: {
@@ -166,7 +174,9 @@ export default function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[100] font-sans">
+    <div className={`fixed bottom-6 right-6 z-[100] font-sans transition-all duration-700 ease-out ${
+      isAppReady ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-75 translate-y-4 pointer-events-none"
+    }`}>
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
