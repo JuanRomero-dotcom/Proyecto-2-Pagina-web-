@@ -59,11 +59,11 @@ export default function Hero() {
             <div className="absolute -top-4 -right-4 h-12 w-12 border-t border-r border-brand/50" />
             <div className="absolute -bottom-4 -left-4 h-12 w-12 border-b border-l border-brand/50" />
 
-            <div className="group relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-ink-200 to-ink-300 dark:from-ink-700 dark:to-ink-800 cursor-pointer">
+            <div className="group relative aspect-[4/5] overflow-hidden bg-transparent cursor-pointer">
               <img
-                src="/yamil.jpg"
+                src="/yamil.1.png"
                 alt="Yamil Amílcar"
-                className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-105"
                 style={{
                   transition: "filter 2200ms cubic-bezier(0.22,1,0.36,1), transform 2200ms cubic-bezier(0.22,1,0.36,1)",
                 }}
